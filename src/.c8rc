@@ -1,0 +1,28 @@
+{
+  "reporter": [
+    "lcov",
+    "text"
+  ],
+  "check-coverage": true,
+  "per-file": true,
+  "all": true,
+  "lines": 100,
+  "statements": 100,
+  "functions": 100,
+  "branches": 0,
+  "exclude": [
+    "tests/**",
+    "src/domain/**/*.ts",
+    "src/**/index.ts",
+    "src/main/docs/**/*.ts",
+    "src/main/config/app.ts",
+    "src/infra/database/helpers/prismaHelper.ts",
+    "scripts/index.ts",
+    "scripts/exportDatabaseCatalog/index.ts",
+    "scripts/**/interfaces/*.ts"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "scripts/**/*.ts"
+  ]
+}
